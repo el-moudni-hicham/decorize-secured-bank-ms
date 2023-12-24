@@ -1,0 +1,27 @@
+<div class="card text-center m-5 p-5">
+  <div class="card-header">
+    <h5>All Accounts</h5>
+  </div>
+  <div class="card-body">
+    <div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let account of accounts">
+            <td>{{ account.id }}</td>
+            <td>{{ account.type }}</td>
+            <td>{{ account.balance }}</td>
+            <td>{{ account.currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
